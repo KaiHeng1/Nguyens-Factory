@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+div.footer{
+    border: solid white 1px;
+    background: white;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  margin-left: 31%;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.facebook {
+  --color: #1877f2;
+}
+.twitter {
+  --color: #1da1f2;
+}
+.instagram {
+  --color: #e4405f;
+}
+.github {
+  --color: #333333;
+}
+.youtube {
+  --color: #cd201f;
+}
+
+.icon:hover,
+.icon:hover .tooltip,
+.icon:hover .tooltip::before {
+  background: var(--color);
+  color: white;
+}
+
+.footer_option{
+    display: inline-flex;
+    list-style: none;
+    height: 350px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+
+ul.footer_option{
+    justify-content: space-around;
+}
+
+.footer_option span.hyper_text{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_option .options{
+    height: 20px;
+    width: auto;
+    z-index: 500;
+    border-radius: 4px 4px 4px 4px;
+    background-color: black;
+    text-align: center;
+}
+
+.footer_option .options:hover{
+    border-radius: 4px 4px 4px 4px;
+    height: 30px;
+    .hyper_text{
+      text-decoration: underline;
+      padding-bottom: 1px;
+      opacity: 0.6;
+    }
+}

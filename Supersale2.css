@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 10%;
+}
+
+.details {
+    flex: 1;
+    padding: 20px;
+}
+
+.details h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.price {
+    display: block;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.Chat-on-WhatsApp {
+    width: 100px;
+    height: 41px;
+}
+
+.btn {
+    padding: 18px 18px;
+    margin: 10px 10px 30px 0;
+    cursor: pointer;
+    background: var(--color);
+}
+
+.btns {
+    padding: 10px 10px;
+    margin: 10px 10px 30px 0;
+    cursor: pointer;
+}
+
+.outer-box {
+    display: flex;
+    align-items: center;
+}
+
+.minus,
+.plus {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.text {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.imgSlide {
+    display: none;
+}
+
+.slider img {
+    max-width: 70%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.prev {
+    left: 270px;
+}
+
+.next {
+    left: 630px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(195, 181, 181, 0.8);
+}
+
+.btn-1 { --color: red; }
+.btn-2 { --color: blue; }
+.btn-3 { --color: yellow; }
+.btn-4 { --color: black; }
+.btn-5 { --color: pink; }

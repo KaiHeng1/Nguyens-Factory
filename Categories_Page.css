@@ -1,0 +1,45 @@
+.selection{
+    display: grid;
+    margin-top: 20px;
+    column-gap: 20px;
+    padding: 0px 20px 0px 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.option{
+    width: 100%; 
+    height: 350px; 
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.option img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.type{
+  color: black;
+  font-size: 20px;  
+  margin:0;
+  padding-top: 8px;
+}
+
+.type:visited{
+    color: black;
+}
+
+.type:hover{
+    opacity: 0.8;
+}
+
+.title-font{
+    font-size: 80px;
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}

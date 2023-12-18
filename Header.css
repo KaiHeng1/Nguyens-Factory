@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    font-family: 'Lora', arial;
+}
+
+header{
+    display: block; 
+    width: 100%;
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid rgb(160, 158, 158);
+    font-weight: bold; 
+}
+
+.home-button, .supersales ,.bestseller, .category, .preorder, .contact{
+    display: inline-block;
+    padding: 45px 30px 40px 30px;
+    vertical-align: top;
+    cursor: pointer;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.supersales:visited, .bestseller:visited,
+.category:visited, .preorder:visited, .contact:visited{
+    color: black;
+}
+
+.supersales:hover, .bestseller:hover,
+ .category:hover, .preorder:hover, .contact:hover{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: black ;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.home-button{
+    margin-left: 50px;
+    padding: 0;
+}
+.category{
+    position: relative;
+}
+
+.category-button{
+    margin: 0px;
+}
+
+.category-dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.category-dropdown a{
+    display: block;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;  
+}
+
+
+.category-dropdown a:hover{
+    background-color: #ddd;
+  
+}
+
+.category:hover .category-dropdown{
+    display: block;
+}

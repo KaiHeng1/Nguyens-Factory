@@ -1,0 +1,97 @@
+.cover{
+    position: relative;
+}
+
+.cover img{
+    height: 680px;
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.frame{
+    background-color: #ffecd6;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+
+h1{
+    font-size: 70px;
+    font-family: barlow condensed,sans-serif;
+    text-transform: capitalize;
+    width: 460px;
+    word-spacing: 0px;
+    font-weight: normal;
+    line-height: 72px;
+}
+
+h4{
+    position: absolute;
+    top:-4%;
+    font-size: 20px;
+    font-family: bar low condensed,sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.submit{
+    position:absolute;
+    top: 86%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #092635;
+    border:none;
+    color:crimson;
+    font-family: barlow condensed,sans-serif;
+    letter-spacing: 1px;
+}
+
+.submit:hover, .submit2:hover{
+    background-color: red;
+    color: white;
+}
+
+.caption {
+    position: inherit;
+    left: 7%;
+    top: 120%;
+    display: flex; /* Use flexbox to arrange items in a row */
+    align-items: center; /* Vertically center the items */
+    margin-top: 120px ;
+}
+
+.image-containers {
+    margin-right: 20px; /* Add spacing between the image and text */
+}
+
+
+
+.text-container {
+     /* Allow the text container to take up remaining space */
+     max-width: 500px;
+}
+
+.c0 {
+    font-family: 'barlow condensed', sans-serif;
+    text-transform: capitalize;
+    word-spacing: 0px;
+    font-weight: normal;
+    overflow:auto;
+}
+.submit2{
+    position:relative;
+    top: 75%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #092635;
+    border:none;
+    color:crimson;
+    font-family: barlow condensed,sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
